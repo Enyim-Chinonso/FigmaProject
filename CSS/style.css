@@ -25,13 +25,22 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  /* position: fixed; */
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-ul {
+ ul {
   list-style: none;
   display: flex;
   gap: 20px;
+} 
+
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 #nav-btn {
@@ -47,6 +56,17 @@ ul {
   align-items: center;
   justify-content: center;
 }
+#nav-btn:hover {
+  background-color: white;
+  border: var(--orange) 1px solid;
+  color: black;
+}
+
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
 /* End of nav bar styling */
 
 
@@ -59,25 +79,47 @@ ul {
   padding: 20px;
   border-radius: 8px;
   position: relative;
+  margin-top: 90px ;
+  margin-left: 40px;
   
 }
 
 #hero-content {
   position: relative;
+    padding-left: 40px;
+
 }
 
-#hero-btn button:first-child {
+#hero-content h1 {
+  padding-top: 60px;
+}
+
+#hero-btn #get {
   background-color: var(--orange);
   width: 150px;
+  height: 50px;
   color: white;
   border-radius: 6px;
   border: none;
 }
-#hero-btn button:last-child {
+#hero-btn #get:hover {
+   background-color: rgb(241, 241, 241);
+   color: black;
+  border: var(--orange) 1px solid;
+}
+
+
+#hero-btn #app {
   width: 130px;
+  height: 50px;
   border-radius: 6px;
-  border: solid 1px gray;
+  border: solid 1px var(--orange);
   margin-left: 5px;
+  background-color: rgb(241, 241, 241);
+}
+#hero-btn #app:hover  {
+   background-color: var(--orange);
+   color: white;
 }
 
 #figures {
@@ -98,14 +140,42 @@ ul {
 
 
 
+/* Start of Image section styling */
+  
+  #verify {
+    width: 100%;
+    height: 100vh;
+    margin-left: 40px;
+    margin-top: 60px;
+    /* background-color: rgb(241, 241, 241); */
+    /* color: var(--orange); */
+  }
+  #verify h1 {
+
+  }
+
+  #companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 40px;
+    margin-bottom: 10%;
+   }
+
+/* End of Image section styling */
+
+
+
 /* Start of about section styling */
 #about {
   background-color: rgb(241, 241, 241);
   display: flex;
   justify-content: space-around;
-  padding: 25px;
+  padding-right: 8%;
+  padding-top: 40px; 
+  padding-bottom: 40px;
   width: 100%;
-  height: 400px;
+  height: 100vh;
+  margin-left: 40px;
 }
 #section-btn {
   background-color: var(--orange);
@@ -113,6 +183,10 @@ ul {
   color: white;
   border-radius: 6px;
   border: none;
+}
+#section-btn:hover {
+    border: solid 1px rgb(241, 241, 241);
+
 }
 /* End of about section styling */
 
@@ -122,83 +196,110 @@ ul {
 #services {
   width: 100%;
   height: 100vh;
-  padding: 30px;
+  margin-top: 60px;
+  /* padding: 30px; */
 }
 
 /* GRIDS */
 #grids {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 40px;
+
 }
 
 #errands {
-  width: 300px;
+  width: 350px;
   height: 150px;
-  background-color: var(--orange);
+  background-color: rgb(241, 241, 241);
   padding: 15px;
-  color: white;
+  color: black;
   border-radius: 5px;
   margin-top: 10px;
+}
+#errands:hover {
+  background-color: var(--orange);
+  color: white;
 }
 #errands p {
   font-size: x-small;
 }
 
 #food {
-  width: 300px;
+  width: 350px;
   height: 150px;
   background-color: rgb(241, 241, 241);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
+}
+#food:hover {
+    background-color: var(--orange);
+  color: white;
 }
 #food p {
   font-size: x-small;
 }
 
 #taxi {
-  width: 300px;
+  width: 350px;
   height: 150px;
   background-color: rgb(241, 241, 241);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
+}
+#taxi:hover {
+    background-color: var(--orange);
+  color: white;
 }
 #taxi p {
   font-size: x-small;
 }
 
 #delivery {
-  width: 300px;
+  width: 350px;
   height: 150px;
   background-color: rgb(241, 241, 241);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
+}
+#delivery:hover {
+    background-color: var(--orange);
+  color: white;
 }
 #delivery p {
   font-size: x-small;
 }
 
 #payment {
-  width: 300px;
+  width: 350px;
   height: 150px;
   background-color: rgb(241, 241, 241);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
+}
+#payment:hover {
+  background-color: var(--orange);
+  color: white;
 }
 #payment p {
   font-size: x-small;
 }
 
 #estate {
-  width: 300px;
+  width: 350px;
   height: 150px;
   background-color: rgb(241, 241, 241);
   padding: 15px;
   border-radius: 5px;
   margin-top: 10px;
+}
+#estate:hover {
+  background-color: var(--orange);
+  color: white;
 }
 
 #estate p {
@@ -216,12 +317,15 @@ ul {
 #contents {
   position: relative;
   margin-top: 50px;
-  padding-right: 20px;
+  padding-right: 8%;
+  margin-left: 40px;
+ 
+
 }
 #contents img {
   position: absolute;
   top: 0%;
-  right: 28%;
+  right: 32%;
 }
 
 .one-three {
@@ -242,6 +346,8 @@ ul {
   background-color: rgb(241, 241, 241);
   padding: 30px;
   margin-top: 30px;
+  margin-left: 40px;
+
 }
 
 .span {
@@ -306,6 +412,11 @@ footer {
   margin-top: 60px;
   justify-content: space-between;
   padding: 20px;
+  width: 100%;
+}
+footer a {
+  color: black;
+  text-decoration: none;
 }
 
 #footer-flex {
@@ -315,7 +426,7 @@ footer {
 #footer-icons {
   display: flex;
   gap: 10px;
-  padding-left: 22%;
+   
 }
 
 #last {
@@ -337,6 +448,9 @@ footer {
 
 section {
   background-color: rgb(255, 238, 231);
+  width: 100%;
+  padding-right: 8%;
+
 }
 section p {
   font-size: small;

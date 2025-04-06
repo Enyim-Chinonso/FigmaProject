@@ -1,0 +1,87 @@
+    /* @media (max-width: 600px) {
+        #nav-center {
+          display: none;
+          flex-direction: column;
+          background-color: #333;
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          width: 150px;
+        }
+        #nav-btn {
+            display: none;
+        }
+      
+        nav ul {
+          display: flex;
+        }
+      
+        #hamburger {
+          display: block;
+        } */
+
+/* 
+        @media (max-width: 768px) {
+
+          ul {
+            display: none; 
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            position: absolute;
+            top: 60px; 
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            font-size: 300px;
+          }
+        
+          ul.active {
+            display: flex;
+          }
+
+        #nav-btn {
+         display: none;
+        }
+        
+          #hamburger {
+            display: block;
+            font-size: 60px;
+          }
+
+                
+          #nav-left img {
+            font-size: 200px;
+          } */
+        
+       
+        
+
+
+
+        /* End of nav bar styling */
+
+
+        /* Start of Hero section styling */
+        /* #hero-content img {
+          display: none;
+        } */
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+     
+
+
+
+
+
+      
